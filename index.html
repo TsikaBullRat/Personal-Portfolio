@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <title>Ntsikayomzi</title>
+    <style>
+      /*tags*/
+      html, body{
+        font-family: 'Noto Sans JP', sans-serif;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+      }
+      h1{
+        font-size: 50px;
+      }
+
+      /*classes*/
+      .head{
+        display: flex;
+        margin-top: -17px;
+      }
+      .box0{
+        background: #e1701a;
+        margin-top: 31px;
+        margin-left:15px;
+        height: 15px;
+        width: 15px;
+      }
+      .box1{
+        background: #f7a440;
+        margin-top: 150px;
+        margin-left: 400px;
+        height: 600px;
+        width: 500px;
+        z-index: 0;
+      }
+      .box2{
+        display: none;
+        background: #fff;
+        margin-top: -550px;
+        margin-left: 600px;
+        width: 800px;
+        height: 400px;
+        z-index: 1;
+      }
+      .box3{
+        background: #f6dcbf;
+        text-align: center;
+        width: 300px;
+        height: 360px;
+      }
+      .box4{
+        background: #e1701a;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35px;
+        height: 3px;
+      }
+      .box5{
+        display:flex;
+      }
+      .box6{
+        width: 500px;
+        height: inherit;
+        text-align: center;
+      }
+      .box7{
+        padding: 20px;
+      }
+      .box8{
+        background-image: url("images/keyboard.jpeg");
+        text-align: center;
+        width: 300px;
+        height: 400px;
+      }
+      .box9{
+        background: #f6dcbf;
+        text-align: center;
+        width: 300px;
+        height: 400px;
+      }
+      .links{
+        display: flex;
+        margin-top: 31px;
+        margin-left: 1200px;
+      }
+      .items{
+        cursor: pointer;
+        text-size: 30px;
+        text-decoration: none;
+        color: #000;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+      }
+      .items:hover{
+        color: #e1701a;
+      }
+      .profile{
+        width: 110px;
+        height: 140px;
+        padding-top: 20px;
+        border-radius: 100%;
+      }
+      .button{
+        border-radius: 15%;
+        background-color: #fff;
+        text-decoration: none;
+        color: #e1701a;
+        padding-top: 10px;
+        padding-left: 25px;
+        padding-bottom: 10px;
+        padding-right: 25px;
+      }
+      .button:hover{
+        background-color: #e1701a;
+        color: #fff;
+      }
+      .animate{
+        animation-name: switch;
+        animation-duration: 1.5s;
+      }
+      .animate2{
+        animation-name: switch2;
+        animation-duration: 1.5s;
+      }
+      .deco{
+        background-image: url("images/graybackground.png");
+        width: 500px;
+        height: inherit;
+      }
+
+      /*animation*/
+      @keyframes switch {
+        from{
+          opacity: 0;
+          margin-left: inherit;
+        }
+        to{
+          opacity: 1;
+          margin-left: 1500;
+        }
+      }
+      @keyframes switch2 {
+        from{
+          opacity: 0;
+          margin-left: 900px;
+        }
+        to{
+          opacity: 1;
+          margin-left: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--header-->
+    <div class="head">
+      <div class="box0"></div>
+        <h2>Ntsikayomz Phenyo Ngcakani</h2>
+        <div class="links">
+          <span onclick="currentBox(1)" class="items">About Me</span>
+          <span onclick="currentBox(2)" class="items">Examples</span>
+          <span onclick="currentBox(3)" class="items">Contact</span>
+        </div>
+    </div>
+
+    <!--big box-->
+    <div class="box1 animate2"></div>
+
+    <!--front box1-->
+    <div class="box2 animate">
+
+      <!--container for icons and profile pic-->
+      <div>
+        <!--holder for image-->
+        <div class="box3">
+          <img class="profile" src="images/front.jpeg">
+          <h3>Ntsikayomzi<br>Phenyo<br>Ngcakani</h3>
+          <div class="box4"></div>
+          <h3>Programmer</h3>
+        </div>
+        <!--box for icons-->
+        <div class="box5">
+          <a href="https://www.instagram.com/hashira_the_sage/?hl=en">
+              <img style="padding:10px" src="images/icon-instagram.svg" alt="">
+          </a>
+          <a href="https://twitter.com/king_phenyo">
+              <img style="padding:10px" src="images/icon-twitter.svg" alt="">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="box6">
+        <h1>Hello</h1>
+        <h2>Heres who I am & what I do</h2>
+        <div class="box7">
+          <p>
+            My name is Tsika and I am a young man working in the IT sector.
+            I enjoy coding and working with harwdware. Currently I am just looking
+            to better my skills in any form possible. I am not efficient, but I am
+            in the process of advancing my skils in C++, HTML, Java, Python, CSS,
+            JavaScript and many more. I hope to give you satisfactory work
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!--front box2-->
+    <div class="box2 animate">
+      <div class="box8">
+
+      </div>
+      <div class="box6">
+        <h3>This is just so you can see some of the projects I've worked on</h3>
+        <a href="https://github.com/TsikaBullRat" class="button">Press me</a>
+        <h3>for those unfamiliar with github heres a site link example</h3>
+        <a href="https://tsikabullrat.github.io/CodeTribe/" class="button">Example1</a>
+      </div>
+    </div>
+
+    <!--front box3-->
+    <div class="box2 animate">
+      <div class="box9">
+        <h2>Contact Info</h2>
+        <h3>Cellphone:</h3>
+        <p>0662067094</p>
+        <h3>Email:</h3>
+        <p>tsika1996190514@gmail.com</p>
+        <h3>Alternate Email:</h3>
+        <p>yomzi123@gmail.com</p>
+      </div>
+      <div class="deco">  </div>
+    </div>
+
+    <script type="text/javascript">
+      var Index = 1;
+      showBox(Index);
+
+      function currentBox(n){
+          showBox(Index = n)
+      }
+
+      function showBox(n){
+        var i;
+        var box = document.getElementsByClassName("box2");
+        var link = document.getElementsByClassName("items");
+        if(n > box.length){Index = 1}
+        if(n < 1){Index = box.length}
+        for (var i = 0; i < box.length; i++) {
+          box[i].style.display ="none";
+        }
+        for (var i = 0; i < link.length; i++) {
+          link[i].className = link[i].className.replace(" active", "");
+        }
+        box[Index-1].style.display= "flex";
+        link[Index-1].className += " active";
+      }
+    </script>
+  </body>
+</html>
